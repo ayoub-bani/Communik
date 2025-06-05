@@ -97,12 +97,12 @@ body {
 #services {
   margin-top: 5rem;
 
-  h2 {
+  .section-title {
     font-family: "MillionDesign", sans-serif;
     font-size: 60px;
   }
 
-  p {
+  .section-paragraph {
     font-family: "poppins", sans-serif;
     font-size: 20px;
     font-weight: 200;
@@ -157,5 +157,91 @@ body {
     font-size: 58px;
     line-height: 75px;
     color: black;
+  }
+}
+
+#nos-projects {
+  height: 600px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  .projects-title {
+    font-family: "MillionDesign", sans-serif;
+    font-size: 60px;
+  }
+
+  .projects-paragraph {
+    font-family: "poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    width: 37%;
+  }
+}
+
+.footer-bar {
+  .white-banner {
+    margin-top: 106px;
+    // overflow: hidden; // important
+    width: 100vw;
+    // white-space: nowrap;
+
+    .white-banner-content {
+      // display: inline-flex;
+      width: max-content;
+      animation: scroll-right 20s linear infinite;
+
+      @keyframes scroll-right {
+        0% {
+          transform: translateX(-50%);
+        }
+
+        100% {
+          transform: translateX(0%);
+        }
+      }
+
+      span {
+        font-family: "MillionDesign", sans-serif;
+        font-size: 50px;
+        padding-right: 10rem;
+      }
+    }
+  }
+
+  ul {
+    margin-top: 5rem !important;
+  }
+
+  .services-list {
+    margin-top: 5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 1rem;
+
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #d9d9d9;
+        color: #000;
+        text-decoration: none;
+        font-family: "MillionDesign", sans-serif;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding: 1.2rem 1.5rem;
+        transition: background 0.3s;
+
+        &:hover {
+          background: #c0c0c0;
+        }
+
+        span {
+          flex-grow: 1;
+        }
+      }
+    }
   }
 }
