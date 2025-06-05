@@ -34,7 +34,6 @@ body {
     padding-top: 5rem;
   }
 
-
   .hero-img {
     position: absolute;
     top: 22px;
@@ -43,7 +42,6 @@ body {
     background-repeat: no-repeat; // ✅ Avoid repeating image
     background-position: center; // ✅ Keep image centered
   }
-
 
   .header-text_one {
     color: white;
@@ -144,11 +142,20 @@ body {
         span {
           flex-grow: 1;
         }
-
-        i {
-          font-style: normal;
-        }
       }
     }
+  }
+}
+
+#quote {
+  margin-top: 5rem;
+  background-color: #D9D9D9;
+  height: 696px;
+
+  span {
+    font-family: "MillionDesign", sans-serif;
+    font-size: 58px;
+    line-height: 75px;
+    color: black;
   }
 }
