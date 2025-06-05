@@ -10,23 +10,38 @@
 
 body {
   background-color: black !important;
+  color: white !important;
+}
+
+.navbar {
+  .nav-item {
+    a {
+      font-family: "poppins", sans-serif;
+      font-size: 16px;
+    }
+  }
 }
 
 #hero-section {
+  position: relative;
+
   h1 {
+    line-height: 70px;
     width: min-content;
   }
 
-  position: relative;
+  .hero-section_custom-padd {
+    padding-top: 5rem;
+  }
+
 
   .hero-img {
     position: absolute;
-    left: 0;
+    top: 22px;
+    right: 48px;
     z-index: 999;
-    background-size: cover; // ✅ This is the correct property
     background-repeat: no-repeat; // ✅ Avoid repeating image
     background-position: center; // ✅ Keep image centered
-    box-shadow: rgba(207, 207, 209, 0.781) 0px 7px 29px 0px;
   }
 
 
@@ -43,5 +58,40 @@ body {
     font-family: "poppins", sans-serif;
     font-size: 100px;
     color: white;
+    font-weight: 200;
+  }
+
+  p {
+    padding-top: 5rem;
+    width: 30%;
+  }
+
+  .white-banner {
+    margin-top: 46px;
+    // overflow: hidden; // important
+    width: 100vw;
+    // white-space: nowrap;
+
+    .white-banner-content {
+      // display: inline-flex;
+      width: max-content;
+      animation: scroll-right 20s linear infinite;
+
+      @keyframes scroll-right {
+        0% {
+          transform: translateX(-50%);
+        }
+
+        100% {
+          transform: translateX(0%);
+        }
+      }
+
+      span {
+        font-family: "MillionDesign", sans-serif;
+        font-size: 50px;
+        padding-right: 10rem;
+      }
+    }
   }
 }
