@@ -1,3 +1,6 @@
+
+![Screenshot](https://github.com/ayoub-bani/Communik/blob/main/screen.png)
+
 # GUIDE DE STYLE – SITE WEB PORTFOLIO ÉLÉGANT
 
 Ce document décrit l'orientation du design, l'identité visuelle et le flux de travail technique utilisé dans le développement de ce projet.
