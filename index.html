@@ -8,38 +8,25 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-transparent">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item me-4">
-              <a class="nav-link active text-white" aria-current="page" href="#">Accueil</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link text-white" href="#">Services</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link text-white">Services</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link text-white">Réalisations</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link text-white">Équipe</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link text-white">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Réalisations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Équipe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
     </nav>
-
     <section id="hero-section">
       <div class="container">
         <div class="row">
@@ -201,12 +188,47 @@
           <div class="col">
             <div class="last-section_text">
               <p>C'est le moment de commencer</p>
-              <button class="custom-btn">Contactez nous</button>
+              <button class="custom-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contactez nous</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Contact PopUp start -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form action="your-form-handler.php" method="POST">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" class="form-control" id="message" rows="4" required></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success">Send</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact PopUp end -->
+
     <script type="module" src="/src/main.js"></script>
   </body>
 

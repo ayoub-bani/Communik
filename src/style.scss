@@ -13,14 +13,19 @@ body {
   color: white !important;
 }
 
-.navbar {
-  .nav-item {
-    a {
-      font-family: "poppins", sans-serif;
-      font-size: 16px;
+nav {
+
+  ul {
+    li {
+      a {
+        font-family: "poppins", sans-serif;
+        font-size: 16px;
+        color: #fff !important;
+      }
     }
   }
 }
+
 
 #hero-section {
   position: relative;
