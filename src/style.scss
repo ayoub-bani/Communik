@@ -66,12 +66,9 @@ body {
 
   .white-banner {
     margin-top: 106px;
-    // overflow: hidden; // important
     width: 100vw;
-    // white-space: nowrap;
 
     .white-banner-content {
-      // display: inline-flex;
       width: max-content;
       animation: scroll-right 20s linear infinite;
 
@@ -90,6 +87,48 @@ body {
         font-size: 50px;
         padding-right: 10rem;
       }
+    }
+  }
+
+  .button.navbar-toggler.custom-toggler.collapsed {
+    background-color: white;
+  }
+
+  @media (max-width: 576px) {
+    overflow-x: hidden;
+
+    .navbar-toggler-icon {
+      color: white;
+    }
+
+    .header-text_one {
+      font-size: 2.5rem !important;
+      line-height: .5rem;
+    }
+
+    .header-text_two {
+      font-size: 4rem;
+    }
+
+    .hero-img {
+      display: none;
+    }
+
+    p {
+      padding-top: 3rem;
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .hero-img {
+      width: 45rem;
+      position: absolute;
+      top: 178px;
+    }
+
+    .header-text_one {
+      font-size: 95px;
     }
   }
 }
@@ -145,6 +184,22 @@ body {
       }
     }
   }
+
+  @media (max-width: 576px) {
+    overflow-x: hidden;
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .section-paragraph {
+      width: 75%;
+    }
+
+    .services-list li a {
+      font-size: 20px;
+    }
+  }
 }
 
 #quote {
@@ -157,6 +212,22 @@ body {
     font-size: 58px;
     line-height: 75px;
     color: black;
+  }
+
+  @media (max-width: 576px) {
+    overflow-x: hidden;
+
+    span {
+      font-size: 1.5rem !important;
+      line-height: 40px !important;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    span {
+      font-size: 2rem;
+      line-height: 50px;
+    }
   }
 }
 
@@ -193,10 +264,21 @@ body {
     font-weight: 200;
     width: 37%;
   }
+
+  @media (max-width: 576px) {
+    overflow-x: hidden;
+
+    .team-title {
+      font-size: 2rem;
+    }
+
+    .team-paragraph {
+      width: 75%;
+    }
+  }
 }
 
 #nos-projects {
-  height: 600px;
   margin-top: 5rem;
   margin-bottom: 5rem;
 
@@ -244,17 +326,26 @@ body {
   .project-card:hover .project-overlay {
     opacity: 1;
   }
+
+  @media (max-width: 576px) {
+    overflow-x: hidden;
+
+    .projects-title {
+      font-size: 2rem;
+    }
+
+    .projects-paragraph {
+      width: 75%;
+    }
+  }
 }
 
 .footer-bar {
   .white-banner {
     margin-top: 106px;
-    // overflow: hidden; // important
     width: 100vw;
-    // white-space: nowrap;
 
     .white-banner-content {
-      // display: inline-flex;
       width: max-content;
       animation: scroll-right 20s linear infinite;
 
@@ -332,6 +423,16 @@ body {
       font-family: "MillionDesign", sans-serif;
       font-size: 30px;
       padding: 15px 35px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    overflow-x: hidden;
+
+    .last-section_text p {
+      font-size: 3rem;
+      line-height: 55px;
+      width: 100%;
     }
   }
 }
